@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lenguajes de Programación</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
+    />
+  </head>
+  <body class="bg-gray-50 text-gray-800 font-sans">
+    <!-- Navbar -->
+    <div
+      class="bg-gradient-to-r from-purple-600 to-blue-500 text-white shadow-md"
+    >
+      <nav
+        class="container px-6 py-4 mx-auto flex justify-between items-center"
+      >
+        <a
+          class="text-2xl font-bold text-white hover:text-yellow-300"
+          href="index.html"
+          >Algoritmos de Manejo de Cadenas</a
+        >
+        <div class="hidden md:flex space-x-6">
+          <a href="definicion.html" class="hover:text-yellow-300">Definición</a>
+          <a href="operaciones.html" class="hover:text-yellow-300"
+            >Operaciones</a
+          >
+          <a href="lenguajes.html" class="hover:text-yellow-300"
+            >Lenguajes de Programación</a
+          >
+          <a href="ejemplos.html" class="hover:text-yellow-300">Ejemplos</a>
+          <a href="referencias.html" class="hover:text-yellow-300"
+            >Referencias</a
+          >
+        </div>
+      </nav>
+    </div>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 py-16">
+      <h1
+        class="text-4xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-blue-500 mb-6"
+      >
+        Lenguajes de Programación
+      </h1>
+      <p class="text-lg text-gray-600 mb-8">
+        A continuación, se describe cómo manejan las cadenas en diferentes
+        lenguajes de programación:
+      </p>
+
+      <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <!-- Python -->
+        <div class="p-6 bg-white rounded-lg shadow">
+          <h3 class="text-xl font-bold mb-2 text-purple-600">Python</h3>
+          <pre class="bg-gray-100 p-4 rounded-md"><code>cadena = "Hola Mundo"
+print(cadena.upper()) 
+ # Convertir a mayúsculas</code></pre>
+        </div>
+
+        <!-- Java -->
+        <div class="p-6 bg-white rounded-lg shadow">
+          <h3 class="text-xl font-bold mb-2 text-blue-500">Java</h3>
+          <pre class="bg-gray-100 p-4 rounded-md"><code>String cadena = "Hola Mundo";
+System.out.println(cadena.toUpperCase());  
+// Convertir a mayúsculas</code></pre>
+        </div>
+
+        <!-- C++ -->
+        <div class="p-6 bg-white rounded-lg shadow">
+          <h3 class="text-xl font-bold mb-2 text-green-500">C++</h3>
+          <pre class="bg-gray-100 p-4 rounded-md"><code>#include &lt;iostream&gt;
+#include &lt;string&gt;
+using namespace std;
+int main() {
+    string cadena = "Hola Mundo";
+    for (char &c : cadena) c = toupper(c);
+    cout << cadena << endl; 
+     // Convertir a mayúsculas
+    return 0;
+}</code></pre>
+        </div>
+
+        <!-- JavaScript -->
+        <div class="p-6 bg-white rounded-lg shadow">
+          <h3 class="text-xl font-bold mb-2 text-red-500">JavaScript</h3>
+          <pre class="bg-gray-100 p-4 rounded-md"><code>let cadena = "Hola Mundo";
+console.log(cadena.toUpperCase()); 
+ // Convertir a mayúsculas</code></pre>
+        </div>
+
+        <!-- PHP -->
+        <div class="p-6 bg-white rounded-lg shadow">
+          <h3 class="text-xl font-bold mb-2 text-indigo-500">PHP</h3>
+          <pre class="bg-gray-100 p-4 rounded-md"><code>$cadena = "Hola Mundo";
+echo strtoupper($cadena); 
+ // Convertir a mayúsculas</code></pre>
+        </div>
+
+        <!-- Ruby -->
+        <div class="p-6 bg-white rounded-lg shadow">
+          <h3 class="text-xl font-bold mb-2 text-yellow-500">Ruby</h3>
+          <pre class="bg-gray-100 p-4 rounded-md"><code>cadena = "Hola Mundo"
+puts cadena.upcase  # Convertir a mayúsculas</code></pre>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white text-center py-6 mt-auto">
+      <p>© 2025 Portal de Algoritmos de Manejo de Cadenas</p>
+      <p class="mt-2">Creado por: Juan Reyes 24-0858 & Ismael De Los Santos 24-0278</p>
+    </footer>
+  </body>
+</html>
